@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Layout } from "./Layout.tsx";
 
 import "./index.css";
-import { Clients, Currencies, Dashboard } from "./pages";
+import { Client, Clients, Currencies, Dashboard } from "./pages";
 
 const router = createBrowserRouter([
 	{
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
 			{
 				path: "clients",
 				element: <Clients />,
+			},
+			{
+				path: "clients/:id",
+				element: <Client />,
 			},
 			{
 				path: "currencies",

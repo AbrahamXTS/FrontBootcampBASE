@@ -43,9 +43,7 @@ export const Client = ({ client }: Props) => {
 				<div className="grid place-content-center">
 					<Link
 						to={`/clients/${customerId}`}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-3 text-center inline-flex items-center mr-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+						className="text-white bg-gray-600 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-3 text-center inline-flex items-center sm:mr-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 					>
 						<IconListDetails className="w-3 h-3" />
 					</Link>

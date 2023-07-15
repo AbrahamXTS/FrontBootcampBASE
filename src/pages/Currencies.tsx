@@ -6,11 +6,15 @@ export const Currencies = () => {
 	return (
 		<>
 			<header className="bg-white shadow">
-				<div className="flex flex-col sm:flex-row sm:justify-between justify-center items-center h-24 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div className="flex flex-col sm:flex-row sm:justify-between justify-center items-center h-32 py-3 sm:h-24  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<h1 className="text-3xl font-bold tracking-tight text-gray-900">
 						Divisas
 					</h1>
-					<SearchInput Icon={IconCoin} propertie="divisa" />
+					<SearchInput
+						Icon={IconCoin}
+						onSearch={console.log}
+						propertie="divisa"
+					/>
 				</div>
 			</header>
 
@@ -19,9 +23,14 @@ export const Currencies = () => {
 					role="list"
 					className="grid sm:grid-cols-2 xl:grid-cols-4 gap-3 divide-y my-7 divide-gray-100 overflow-auto w-full"
 				>
-					{currencies.map((currency) => (
-						<Currency currency={currency} key={currency.symbol} />
-					))}
+					{/* Iterar sobre el arreglo de divisas */}
+					<Currency
+						currency={{
+							name: "Euro",
+							symbol: "EUR",
+							value: 1362.519634,
+						}}
+					/>
 				</ul>
 			</section>
 		</>
