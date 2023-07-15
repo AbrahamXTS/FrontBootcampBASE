@@ -1,12 +1,18 @@
 lockfileVersion: "6.0"
 
 dependencies:
+    "@headlessui/react":
+        specifier: ^1.7.15
+        version: 1.7.15(react-dom@18.2.0)(react@18.2.0)
     "@tabler/icons-react":
         specifier: ^2.24.0
         version: 2.24.0(react@18.2.0)
     axios:
         specifier: ^1.4.0
         version: 1.4.0
+    dayjs:
+        specifier: ^1.11.9
+        version: 1.11.9
     react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -393,6 +399,21 @@ packages:
             }
         engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
         dev: true
+
+    /@headlessui/react@1.7.15(react-dom@18.2.0)(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-OTO0XtoRQ6JPB1cKNFYBZv2Q0JMqMGNhYP1CjPvcJvjz8YGokz8oAj89HIYZGN0gZzn/4kk9iUpmMF4Q21Gsqw==,
+            }
+        engines: { node: ">=10" }
+        peerDependencies:
+            react: ^16 || ^17 || ^18
+            react-dom: ^16 || ^17 || ^18
+        dependencies:
+            client-only: 0.0.1
+            react: 18.2.0
+            react-dom: 18.2.0(react@18.2.0)
+        dev: false
 
     /@humanwhocodes/config-array@0.11.10:
         resolution:
@@ -1124,6 +1145,13 @@ packages:
             fsevents: 2.3.2
         dev: true
 
+    /client-only@0.0.1:
+        resolution:
+            {
+                integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==,
+            }
+        dev: false
+
     /color-convert@2.0.1:
         resolution:
             {
@@ -1193,6 +1221,13 @@ packages:
                 integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==,
             }
         dev: true
+
+    /dayjs@1.11.9:
+        resolution:
+            {
+                integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==,
+            }
+        dev: false
 
     /debug@4.3.4:
         resolution:
