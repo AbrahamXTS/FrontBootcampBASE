@@ -5,7 +5,7 @@ interface Props {
 export const Avatar = ({ name }: Props) => {
 	const initials = name
 		.split(" ")
-		.map((n) => n[0])
+		.map((n) => n[0].toUpperCase())
 		.slice(0, 2)
 		.join("");
 

@@ -5,3 +5,4 @@ export * from "./CreditCard";
 export * from "./Currency";
 export * from "./Navbar";
 export * from "./SearchInput";
+export * from "./Spinner";

@@ -1,10 +1,10 @@
 import dayjs from "dayjs";
 import "dayjs/locale/es";
-
-import { IconListDetails } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-import { Client as IClient } from "../interfaces";
+import { IconListDetails } from "@tabler/icons-react";
+
 import { Avatar } from "./Avatar";
+import { Client as IClient } from "../interfaces";
 
 interface Props {
 	client: IClient;

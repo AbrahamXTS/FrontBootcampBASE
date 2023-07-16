@@ -1,9 +1,9 @@
 import { IconSearch, TablerIconsProps } from "@tabler/icons-react";
-import { FormEvent } from "react";
+import { ChangeEventHandler } from "react";
 
 interface Props {
 	Icon: (props: TablerIconsProps) => JSX.Element;
-	onSearch: (e: FormEvent<HTMLInputElement>) => void;
+	onSearch: ChangeEventHandler<HTMLInputElement>;
 	propertie: string;
 }
 

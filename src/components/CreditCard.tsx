@@ -9,7 +9,7 @@ export const CreditCard = ({ name, cardNumber, balance }: Props) => {
 		<li className="max-w-md h-64 bg-red-100 rounded-xl relative text-white shadow-2xl mx-auto">
 			<img
 				className="relative object-cover w-full h-full rounded-xl"
-				src="https://i.imgur.com/kGkSg1v.png"
+				src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm33-chim-22-e-wall.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ec549a844a7751a2cf8a2f627467305c"
 			/>
 
 			<div className="w-full px-8 absolute top-8">

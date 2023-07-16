@@ -17,12 +17,10 @@ function classNames(...classes: string[]) {
 export const Navbar = () => {
 	const { pathname } = useLocation();
 
-	// TODO: Obtener la información del cliente - 2da iteración
-
 	const user = {
-		name: "Abraham Espinosa",
-		email: "aespinosam@bancobase.com",
-		imageUrl: "https://avatars.githubusercontent.com/u/73494045?v=4",
+		name: "Usuario",
+		email: "usuario@bancobase.com",
+		imageUrl: "https://avatars.githubusercontent.com/u/583231?v=4",
 	};
 
 	const navigation = [
