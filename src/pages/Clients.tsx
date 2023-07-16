@@ -10,7 +10,11 @@ export const Clients = () => {
 					<h1 className="text-3xl font-bold tracking-tight text-gray-900">
 						Clientes
 					</h1>
-					<SearchInput Icon={IconUser} propertie="clientes" />
+					<SearchInput
+						Icon={IconUser}
+						onSearch={console.log}
+						propertie="clientes"
+					/>
 				</div>
 			</header>
 			<section>
@@ -42,9 +46,16 @@ export const Clients = () => {
 						role="list"
 						className="my-4 overflow-auto divide-y divide-gray-100"
 					>
-						{clients.map((client) => (
-							<Client client={client} key={client.customerId} />
-						))}
+						{/* Iterar sobre cada cliente del arreglo: */}
+						<Client
+							client={{
+								birthdate: "1977-10-12T00:00:00.000Z",
+								curp: "OEAF771012HMCRGR09",
+								customerId: 0,
+								name: "Francisco Ortega Aguilar",
+								gender: "HOMBRE",
+							}}
+						/>
 					</ul>
 				</div>
 			</section>

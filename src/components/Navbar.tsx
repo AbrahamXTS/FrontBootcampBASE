@@ -17,6 +17,8 @@ function classNames(...classes: string[]) {
 export const Navbar = () => {
 	const { pathname } = useLocation();
 
+	// TODO: Obtener la información del cliente - 2da iteración
+
 	const user = {
 		name: "Abraham Espinosa",
 		email: "aespinosam@bancobase.com",

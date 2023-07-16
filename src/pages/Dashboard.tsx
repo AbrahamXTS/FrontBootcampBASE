@@ -12,7 +12,8 @@ export const Dashboard = () => {
 			</header>
 
 			<section className="flex flex-col items-center justify-center h-[calc(100vh-15rem)]">
-				<h2 className="text-4xl font-bold text-gray-700">
+				{/* Cambiar por la información del cliente */}
+				<h2 className="text-4xl font-bold text-center text-gray-700">
 					Bienvenido Abraham
 				</h2>
 				<p className="mt-12 text-lg text-center">

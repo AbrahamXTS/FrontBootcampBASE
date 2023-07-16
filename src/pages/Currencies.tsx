@@ -26,9 +26,14 @@ export const Currencies = () => {
 					role="list"
 					className="grid w-full gap-3 overflow-auto divide-y divide-gray-100 sm:grid-cols-2 xl:grid-cols-4 my-7"
 				>
-					{currencies.map((currency, index) => (
-						<Currency currency={currency} key={index} />
-					))}
+					{/* Iterar sobre el arreglo de divisas */}
+					<Currency
+						currency={{
+							name: "Euro",
+							symbol: "EUR",
+							value: 1362.519634,
+						}}
+					/>
 				</ul>
 			</section>
 		</>
