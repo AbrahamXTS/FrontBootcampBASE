@@ -1,15 +1,15 @@
 import { IconSearch, TablerIconsProps } from "@tabler/icons-react";
-import { FormEvent } from "react";
+import { ChangeEventHandler } from "react";
 
 interface Props {
 	Icon: (props: TablerIconsProps) => JSX.Element;
-	onSearch: (e: FormEvent<HTMLInputElement>) => void;
+	onSearch: ChangeEventHandler<HTMLInputElement>;
 	propertie: string;
 }
 
 export const SearchInput = ({ Icon, onSearch, propertie }: Props) => {
 	return (
-		<form className="flex items-center sm:w-96 w-full mt-4 sm:mt-0">
+		<form className="flex items-center w-full mt-4 sm:mt-0">
 			<label htmlFor="simple-search" className="sr-only">
 				Buscar
 			</label>
